@@ -1,12 +1,48 @@
 body {
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-  text-align: center;
-  padding: 50px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-h1 {
-  color: #2b2b2b;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.logo-placeholder {
+  width: 60px;
+  height: 60px;
+  background: #555;
+}
+
+#cart {
+  cursor: pointer;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background: #111;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 150px;
+  background: #666;
+  margin-bottom: 10px;
 }
 
 button {
@@ -14,6 +50,48 @@ button {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+}
+
+#newsletter {
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+#newsletter input {
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+#overlay,
+#cartOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay-content,
+.cart-content {
+  background: #111;
+  padding: 30px;
+  text-align: center;
+}
+
+.overlay-image {
+  width: 200px;
+  height: 200px;
+  background: #555;
+  margin-bottom: 20px;
 }

@@ -10,11 +10,56 @@
   <meta http-equiv="Expires" content="0">
 </head>
 <body>
-  <h1>Willkommen bei The Green Toad!</h1>
-  <p>Hier entsteht meine neue Webseite für die Brand.</p>
+  <div id="overlay" class="hidden">
+    <div class="overlay-content">
+      <div class="overlay-image"></div>
+      <p>Entdecke unser neuestes Produkt!</p>
+      <button id="closeOverlay">Schließen</button>
+    </div>
+  </div>
 
-  <button onclick="zeigeNachricht()">Sag Hello </button>
+<header>
+  <div class="logo-placeholder"></div>
+  <h1>The Green Toad</h1>
+  <div id="cart">Warenkorb (<span id="cart-count">0</span>)</div>
+</header>
 
-  <script src="script.js"></script>
+<button onclick="zeigeNachricht()">Sag Hello </button>
+
+  <main>
+    <section id="products">
+      <div class="product">
+        <div class="img-placeholder"></div>
+        <h2>Produkt 1</h2>
+        <button class="add-to-cart" data-name="Produkt 1">In den Warenkorb</button>
+      </div>
+      <div class="product">
+        <div class="img-placeholder"></div>
+        <h2>Produkt 2</h2>
+        <button class="add-to-cart" data-name="Produkt 2">In den Warenkorb</button>
+      </div>
+      <div class="product">
+        <div class="img-placeholder"></div>
+        <h2>Produkt 3</h2>
+        <button class="add-to-cart" data-name="Produkt 3">In den Warenkorb</button>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+      <input type="email" id="email" placeholder="Deine E-Mail" />
+      <button id="subscribe">Abonnieren</button>
+    </section>
+  </main>
+
+  <div id="cartOverlay" class="hidden">
+    <div class="cart-content">
+      <h2>Warenkorb</h2>
+      <ul id="cart-items"></ul>
+      <button id="closeCart">Schließen</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
