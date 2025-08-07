@@ -46,10 +46,10 @@ header {
 }
 
 button {
-  background: #f57a00;
-  color: #fff;
-  border: none;
+  background-color: #129d5a;
+  color: white;
   padding: 10px 20px;
+  border: none;
   cursor: pointer;
 }
 
